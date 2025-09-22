@@ -1,0 +1,217 @@
+  *{
+	  margin: 0;
+	  padding: 0;
+
+  }
+
+  html{
+  	font-size: 17px;
+  } 
+
+  body { 
+	/*background: hsl(110, 40%, 40%);*/
+	background: rgb(38, 38, 38);
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+}  
+
+ h1 {
+	/*color: hsl(248, 39%, 20%);*/
+	color: hsl(0, 0%, 22%);
+	 text-align: center;
+	 font-size: 1.8rem;
+ }
+
+ h2 {
+	/*color: hsl(248, 39%, 20%);*/
+	color: hsl(0, 0%, 22%);
+	 text-align: center;
+	 font-size: 1.7rem;
+ }
+
+ main {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 940px;
+	background: white;
+	padding: 20px;
+	border-right: 1px solid darkgreen;
+	border-bottom: 1px solid darkgreen;
+
+ }
+
+ p {
+	text-indent: 20px;
+	font-size: 1.2rem;
+	/*color: hsl(0, 0%, 20%);*/
+   }
+
+ /*a {
+ 	text-decoration: none;
+ }
+
+ a:hover {
+	border-bottom:1px solid;
+ }*/
+
+ .italicParagraph{
+	 font-style: italic;
+ }
+
+/* кликабельный текст */
+.spoilerWord {
+	cursor: pointer;
+	border-bottom:1px dotted;
+	/*color: hsl(120, 100%, 15%);*/
+	/*color: hsl(248, 39%, 26%);*/
+	color: hsl(0, 0%, 22%);
+}
+
+.spoilerWord:hover{
+	/*color: black;*/
+	/*color: rgb(38, 38, 38);*/
+	color: hsl(248, 39%, 30%);
+	border-bottom:1px dotted;
+	cursor: pointer;
+}
+
+.spoilerWordActive {
+	cursor: pointer;
+	/*border-bottom:1px dotted;*/
+	/*color: black;*/
+	/*color: rgb(38, 38, 38);*/
+	color: hsl(248, 39%, 50%);
+}
+
+.spoilerWordActive:hover {
+	cursor: pointer;
+	/*color: hsl(120, 100%, 15%);*/
+	/*color: rgb(38, 38, 38);*/
+	color: hsl(248, 39%, 30%);
+	border-bottom:1px dotted;
+
+}
+
+ .spoilerBox {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 15px;
+    width: 98%;
+    border-bottom:1px dotted;
+    /*background: hsl(90, 100%, 80%);*/
+    /*background: hsl(0, 0%, 99%);*/
+    /*background: lavender;*/
+    /*background: LightYellow;*/
+}
+
+.resp-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;  /*This is where the magic is. In CSS, the padding-top property can receive a percentage, this is what keeps our iframe to the right ratio. By using percentage, it will calculate the padding to use based on the width of the element. In our example, we want to keep the ratio of 56.26% (height 9 ÷ width 16) because this is the default ratio for YouTube videos. However, other ratios can be used as well.*/
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+ .resp-img {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.summaryTitle{
+	width: auto;
+	/*border-bottom: 2px dashed;*/
+	font-size: 1.35rem;
+	font-weight: bold;
+}
+
+details summary {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  /*color: darkgreen;*/
+  /*color: hsl(248, 39%, 26%);*/
+	color: hsl(0, 0%, 22%);
+}
+
+details summary:hover {
+	/*color: black;*/
+	/*color: rgb(38, 38, 38);*/
+	color: hsl(248, 39%, 26%);
+}
+
+details[open] summary {
+	color: black;
+	/*color: rgb(38, 38, 38);*/
+	/*color: hsl(0, 0%, 22%);*/
+}
+
+details[open] summary:hover {
+	/*color: black;*/
+	/*color: darkgreen;*/
+	color: hsl(248, 39%, 26%);
+}
+
+blockquote {
+margin: 0;
+background: hsl(0, 0%, 90%);
+color: #131314;
+padding: 30px 30px 30px 90px;
+position: relative;
+font-family: 'Lato', sans-serif;
+}
+blockquote:before {
+content: "\201C";
+font-family: serif;
+position: absolute;
+top: 20px;
+left: 16px;
+color: black;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: white;
+font-size: 40px;
+font-weight: bold;
+text-align: center;
+line-height: 50px;
+}
+blockquote:after {
+content: "";
+width: 4px;
+background: white;
+position:absolute;
+left: 70px;
+top: 20px;
+bottom: 20px;
+}
+blockquote span {
+margin-top: 0;
+font-size: 24px;
+font-weight: 300;
+}
+blockquote cite {
+font-style: normal;
+text-transform: uppercase;
+}
